@@ -1,11 +1,8 @@
 function checkSpam(str) {
   str = str.toLowerCase();
 
-  if (str.indexOf('1xbet', 0) !== -1) {
+  if (str.includes('1xbet') === true || str.includes('xxx') ) {
     return true;
-  } else if (str.indexOf('xxx', 0) !== -1) {
-    return true;
-  } else {
-    return false;
   }
+    return false;
 }
