@@ -10,7 +10,15 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  if (name === null) {
+    return false;
+  } else if (name.length >= 4 &&
+      name.indexOf(' ', 0) === -1) {
+        return true;
+      } else if (name.length <= 4 ||
+                 name.indexOf(' ', 0) !== -1) {
+                   return false;
+                 }
 }
 
 function sayHello() {
@@ -22,3 +30,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+sayHello();
