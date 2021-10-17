@@ -1,17 +1,24 @@
 let calculator = {
-  read(a, b) {
-    this.a = a;
-    this.b = b;
-  },
 
-  sum() {
-    return this.a + this.b;
-  },
+read(a, b) {
+this.a = a;
+this.b = b;
+},
 
-  mul() {
-    return this.a * this.b;
-  },
-};
+sum() {
+  return this.a + this.b;
+},
+
+mul() {
+  return this.a * this.b;
+}
+
+}
+
+
+//- `read(a, b)` (читать) запрашивает два значения и сохраняет их как свойства объекта.
+//- `sum()` (суммировать) возвращает сумму сохранённых значений.
+//- `mul()` (умножить) перемножает сохранённые значения и возвращает результат.
 
 // НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
 window.calculator = calculator; // делает ваш калькулятор доступным глобально
