@@ -18,3 +18,12 @@ function highlight(table) {
     }
   }
 }
+
+function countNames() {
+  let tbody = table.querySelector('tbody');
+  let nameCell = row.cells[0];
+
+  for (let row of tbody.rows) {
+    alert ("Привет, " + nameCell);
+  }
+}
