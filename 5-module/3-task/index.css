@@ -1,7 +1,7 @@
 .carousel {
   height: var(--carousel-height);
   position: relative;
-  overflow: hidden;
+  overflow: ;
 }
 
 .carousel__caption {
